@@ -1,0 +1,23 @@
+
+[package]
+name = "token-program"
+version = "0.0.1"
+description = "Example program minting token and transfer from one to another address"
+authors = ["Dario Zamlic <dario.zamlic@gmail.com>"]
+edition = "2021"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "0.9.1"
+borsh-derive = "0.9.1"
+solana-program = "=1.7.9"
+
+[dev-dependencies]
+solana-program-test = "=1.7.9"
+solana-sdk = "=1.7.9"
+
+[lib]
+name = "token_program"
+crate-type = ["cdylib", "lib"]
